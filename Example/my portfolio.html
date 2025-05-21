@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Developer Portfolio</title>
+   <style>
+     body {
+  font-family: Arial, sans-serif;  
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  
+}
+
+.left-panel {
+  width: 35%;
+  background: white;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.left-panel h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+.role {
+  font-weight: bold;
+  color: #333;
+}
+
+.pronouns {
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 8px;
+  vertical-align: middle;
+}
+
+.right-panel {
+  width: 65%;
+  background-color: #d8fca4;
+  padding: 3rem;
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}   
+
+.right-panel h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-btn {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  border: 4px solid #000;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: rgb(234, 3, 255);
+}
+
+.skills-section {
+  background-color: #f4ffe5;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skill {
+  background-color: #00adb5;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-section {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 2rem;
+  border-top: 2px solid #ddd;
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-section label {
+  font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-section button {
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #007b85;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    box-shadow: none;
+    padding: 1.5rem;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .resume-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .right-panel {
+    padding: 1rem;
+  }
+
+  .skills-section, .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-section form {
+    gap: 0.75rem;
+  }
+
+  .social-icons img {
+    width: 20px;
+    margin: 0 5px;
+  }
+
+  .right-panel h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+   </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="my profile.jpg" alt="Profile Photo" class="profile-img">
+      <h1>Aravind</h1>
+      <p class="role">Python Full Stack Developer</p>
+      <p class="pronouns"></p>
+      <div class="social-icons">
+        <a href="#"><img src="email.png" alt="Email"></a>
+        <a   href="#"><img src="fbook.png" alt="facebook"></a>
+        <a href="#"><img src="link.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="right-panel">
+      <h2>About Me</h2>
+      <p>
+        Passionate Python Full Stack Developer with experience in Django, Flask, and modern frontend tools.
+        I build scalable and secure web apps that solve real-world problems.
+      </p>
+
+      <h3>Education</h3>
+      <p><strong>2022</strong> - B.com in Computer Application<br>Sree Balakrishna College Of Arts&Science</p>
+        
+      <p><strong>2025</strong> - Python Full Stack Development<br>Vetri Software Institute</p>
+
+      <h3>Experience</h3>
+       <p><strong>2023</strong> - Sales Excutive<br>Jayanthi Pharma Private Limited</p>
+
+       <p><strong>2024</strong> - Data Analiyst<br>Datacorp Private Limited</p>
+
+      <p><strong>2025</strong> - Junior Developer<br>CodeWave Solutions</p>
+
+      <button class="resume-btn">Resume</button><br><br>
+
+      
+<section class="skills-section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">Python</div>
+    <div class="skill">Django</div>
+    <div class="skill">Flask</div>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">PostgreSQL</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">REST APIs</div>
+  </div>
+</section>
+   
+
+   <section class="contact-section">
+    <h2>Contact Me</h2>
+    <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button> 
+    </form>
+  </section>
+  </div>  
+</body>
+</html>
