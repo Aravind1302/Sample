@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Diet & Nutrition Planner Website</title>
+
+    <style>
+
+         
+   
+    .top-bar {
+      background-color: #e8ffe8;
+      color: #000;
+      text-align: center;
+      padding: 6px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      border-bottom: 1px solid #eee;
+      background-color: #fff;
+      position: sticky;
+      z-index: 100;
+    }
+
+    .navbar .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #2e7d32;
+    }
+
+    .navbar .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+        font-weight: bold;
+        font-size: large;
+        color: #2e7d32;
+    }
+
+    .register-btn {
+      border: 2px solid #2e7d32;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #2e7d32;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background-color: #2e7d32;
+      color: #fff;
+    }
+
+      
+    .hero {
+      color: #000;
+      background-color: #fef2e8;
+      padding: 80px 20px;
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+      position: relative;
+    }
+
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero h2 {
+      color: #42a141;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .hero blockquote {
+      font-size: 18px;
+      font-style: italic;
+      margin: 20px auto;
+      max-width: 700px;
+    }
+
+    .hero a  {
+      text-decoration: none;
+      color: black;
+      margin-top: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: 2px solid #000;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .hero a:hover {
+      background-color: #42a141;
+    }
+
+   
+    .feature-icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .feature {
+      text-align: center;
+      width: 120px;
+    }
+
+    .feature img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+
+      h2 {
+        text-align: center;
+      }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .left-image, .right-top, .right-bottom {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .label {
+      position:absolute;
+      bottom: 15px;
+      left: 15px;
+      background-color: #f15a29;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .right-column {
+      display: grid;
+      gap: 20px;
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+.featured-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    
+    .logos-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .logos-container img {
+      height: 50px;
+      object-fit:contain;
+      width: 250px;
+    }
+
+.challenge-box {
+      max-width: 1200px;
+      margin: 50px auto;
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      background: linear-gradient(to right, #eaf1f3 50%, white 50%);
+      box-shadow: 5px 10px 25px rgba(0,0,0,0.1);
+    }
+    .text-content {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-content h2 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .text-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .text-content .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      background-color: #2e7d32;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+     
+    }
+    .text-content .btn:hover {
+      background-color: #256428;
+    }
+    .image-content {
+      flex: 1;
+      background: url(/30\ day\ challenge-home\ screen.png) no-repeat center;
+      background-size: cover;
+    }
+
+    .testimonials-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .testimonials-section h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .testimonials-section p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .testimonial-cards {
+      background-color: rgb(225, 243, 201);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .testimonial {
+      max-width: 300px;
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+    }
+    .testimonial img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    .testimonial p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+    .testimonial .name {
+      font-weight: bold;
+      color: #08733e;
+      font-size: 15px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 40px 20px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .footer-section h3,
+    .footer-section p,
+    .footer-section a {
+      margin: 10px 0;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .footer-section p {
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      text-align: end;
+      margin:10px;
+      font-size: 20px;
+      color: black;
+      text-decoration: none;
+    }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="top-bar">
+        ONE STOP FOR NUTRITION PLAN AND PERSONALIZED DIET CHART !!!
+      </div>
+    
+      <nav class="navbar">
+        <div class="logo">EAT HEALTHY +</div>
+        <div class="nav-links">
+           <a href="home.html">Home</a>
+          <a href ="eathealthy.html">Eat Healthy</a>
+          <a href="resource blog.html">Resources</a>
+          <button class="register-btn">REGISTER</button>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-content">
+          <h2>EAT HEALTHY +</h2>
+          <h1>Your essential guide to healthy eating</h1>
+          <blockquote>
+            <span style="font-size: 32px; color: #42a141;">“</span>Our vision is for a future where everyone has a healthy, sustainable diet.
+            Ultimately, we want to change the food environment and motivate people to adopt healthy, sustainable diets - for life.
+          </blockquote>
+          <a href="aboutus.html" class="btn">MORE ABOUT US ➝</a>
+        </div><br><br>
+      
+      
+        <div class="feature-icons">
+          <div class="feature">
+            <img src="/meal icon-home scrn.png" alt="Perfect Meal Plan" />
+            <p>Perfect Meal Plan</p>
+          </div>
+          <div class="feature">
+            <img src="/nutri plan icon-home.png" alt="Nutrition Plan" />
+            <p>Nutrition Plan</p>
+          </div>
+          <div class="feature">
+            <img src="/sample brochure-home.png" alt="Free Sample Brochures" />
+            <p>Free Sample Brochures</p>
+          </div>
+          <div class="feature">
+            <img src="/diet chat icon-home.png" alt="Personalized Diet Chart" />
+            <p>Personalized Diet Chart</p>
+          </div>
+          <div class="feature">
+            <img src="/30 day icon-home.png" alt="30-days challenge" />
+            <p>30-days challenge</p>
+          </div>
+        </div>
+      </section>
+      
+      
+      <h2>Our Feed For You</h2>
+      <div class="grid-container">
+        <div class="left-image">
+          <img src="/nutritious families-home screen.png" alt="Family Activity">
+          <div class="label">Nutrition Information for Families</div>
+        </div>
+      
+        
+        <div class="right-column">
+          <div class="right-top">
+            <img src="/recipe-home screen.png" alt="Recipe">
+            <div class="label">Recipe of the week</div>
+          </div>
+          <div class="right-bottom">
+            <img src="/meal plan pdf-home screen.png" alt="Meal Plan">
+            <div class="label">Get your MEAL PLAN PDF</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="featured-section">
+        <h2>FEATURED IN</h2>
+        <div class="logos-container">
+          <img src="/herbal logo.png" alt="Herbalife">
+          <img src="/fitbit logo.png" alt="Fitbit">
+          <img src="/healthy chew logo.png" alt="Healthy Chew">
+          <img src="/nutreco logo.png" alt="Nutreco">
+          <img src="/nutri growth logo.png" alt="Nutri Growth">
+          <img src="/atrium logo.png" alt="Atrium Health">
+          <img src="/care plus logo.png" alt="CarePlus Health Plans">
+        </div>
+      </div>
+      
+      <div class="challenge-box">
+        <div class="text-content">
+          <h2>JOIN THE 30-DAY CHALLENGE</h2>
+          <p>
+            Our 30-Day Challenge is a fun and effective way to kick-start your journey towards better health. 
+            This program is designed to help you build lasting habits and see noticeable improvements in just one month!
+          </p>
+          <a href="pdf.html" class="btn">DOWNLOAD THE CHALLENGE PDF</a>
+        </div>
+        <div class="image-content"></div>
+      </div>
+      
+      <div class="testimonials-section">
+        <h2>TESTIMONIALS</h2>
+        <p>Hear from our valuable customers who have transformed their health with <strong>EAT HEALTHY +</strong></p>
+      
+        <div class="testimonial-cards">
+          <div class="testimonial">
+            <img src="/review 1.png" alt="Wilson O">
+            <p>"Before, I was lost in the world of food, feeling confused and overwhelmed. After using this website, I feel empowered & created a sustainable healthy lifestyle that I love."</p>
+            <div class="name">WILSON O</div>
+          </div>
+      
+          <div class="testimonial">
+            <img src="/review 2.png" alt="Maria Nelson">
+            <p>"I've learned so much about nutrition from this website! It has changed my perspective on eating and helped me make healthier choices. I feel more energetic and my digestive issues have improved."</p>
+            <div class="name">MARIA NELSON</div>
+          </div>
+      
+          <div class="testimonial">
+            <img src="/review 3.png" alt="Jerald John">
+            <p>"I've learned so much about nutrition from this website! It has changed my perspective on eating and helped me make healthier choices. I feel more energetic and my digestive issues have improved."</p>
+            <div class="name">JERALD JOHN</div>
+          </div>
+        </div>
+      
+        <footer>
+          <div class="footer-container">
+            <div class="footer-section">
+              <h3><strong>EAT HEALTHY +</strong></h3>
+              <p>Eat Healthy + is a comprehensive platform, which gives an essential guide to healthy eating</p>
+              <p><a href="terms.html"><strong>Terms & conditions</strong></a></p>
+              <p><a href="privpolicy.html"><strong>Privacy policy</strong></a></p>
+            </div>
+            <div class="footer-section">
+              <h3>Quick Links:</h3>
+              <p><a href="aboutus.html">About us</a></p>
+              <p><a href="advtise.html">Advertising Policy</a></p>
+              <h3>Contact us:</h3>
+              <p>Phone: +91 123457890</p>
+              <p>Email: info@eathealthy.com</p>
+            </div>
+            <div class="footer-section">
+              <p><a href="ngs.html"><b>Nutrition Guidelines</b></a></p>
+              <p><a href="news.html"><b>News</b></a></p>
+              <p><a href="divinclusion.html"><b>Diversity & Inclusion</b></a></p>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>© Eat Healthy +. All Rights Reserved</p>
+            <div class="social-icons">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+        </footer>
+</body>
+</html>
