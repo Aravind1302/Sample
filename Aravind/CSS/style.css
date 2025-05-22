@@ -1,0 +1,281 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images/Picsart_25-05-18_13-25-08-004.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    width: 20%;
+}
+
+.container {
+    padding: 10px 10%;  
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content:'';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+     font-size: 60px;
+     margin-top: 20px;
+}
+
+.header-text p span {
+    color:#ff004f;
+}
+
+.typing span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(16) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 13ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.header-text h1 span {
+    color: #ff004f;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #0d6efd;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0b5ed7;
+    transform: scale(1.2);
+}
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+#about {
+    text-align: center;
+    list-style: none;
+}
+
+.sub-title {
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.description {
+    font-size:large;
+    text-align: start;
+    margin: 50px; 
+}
+
+.head {
+    font-size: 40px;
+}
+
+.skills, .experience, .education {
+    background-color: #fff;
+    color: #080808;
+    border: 5px solid #0d6efd;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.skills li,
+.experience li,
+.education li {
+    font-size: 20px;
+    list-style-type: none;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+li span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff004f;
+}
+
+
+#projects {
+    padding: 40px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.project-box {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #20c997;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box h2 {
+    font-size: 1.7rem;
+    color: black;
+}
+
+.project-box p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.project-box a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-box a:hover {
+    text-decoration: underline;
+}
+
+.project-box:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+   
+    .contact-section {
+      max-width: 800px;
+      height: 40vh;
+      background: #fff;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: auto;
+    }
+    
+    .contact-heading {
+        font-weight: bold;
+        text-align: center;
+        color: #080808;
+        font-size: 40px;
+    }
+
+    .contact-item span {
+        color: #ff004f;
+    }
+
+    .contact-section h2 {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-item {
+      margin-bottom: 50px;
+      font-size: 1.1em;
+    }
+
+    .contact-item span {
+      display: inline-block;
+      width: 80px;
+      font-weight: bold;
+    }
+
+    .contact-item a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-heading {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+    }
